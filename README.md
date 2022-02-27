@@ -1,5 +1,7 @@
 # HackTU 3.0 - Submission Report
 
+### Deployed Website Link - [Naukri-Mitra](http://app-56ccd84d-2354-4dd7-ac9f-74a6518b524b.cleverapps.io/)
+
 This is the official code repository for Dark Coders. This application was developed during HackTU 3.0, the online hackathon conducted by CCS, Thapar Institute of Engineering & Technology.
 
 ### Dark Coders
@@ -53,7 +55,6 @@ In near future we are planning to:
 4. On matching a job-seeker’s criteria with an available job, a notification may be sent to the job-seeker. Upon confirmation, the aspirant's job application may be automatically sent to the organization having the vacancy. 
 5. To complete, all the remaining features mentioned on the website.
 6. We are planning to provide certification courses.
-
 
 
 #### Usage
