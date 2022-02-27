@@ -38,6 +38,10 @@ The platform is made in a very understandable design and layout with very minima
 #### Home Page(2)
 ![Screenshot (88)](https://user-images.githubusercontent.com/72596619/155871249-1de689f7-d167-4c43-93cf-3402a72a655c.png)
 
+#### Login/SignUp
+![login](https://user-images.githubusercontent.com/72596619/155872060-f7f8e8bb-4bc4-4ba6-8e66-f5589160b569.png)
+
+
 #### Post_Job
 ![Screenshot (86)](https://user-images.githubusercontent.com/72596619/155871255-982573f0-3c24-4702-a0aa-d9b582ef90f4.png)
 
