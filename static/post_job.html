@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
+  <!--  All snippets are MIT license http://bootdey.com/license -->
+  <title>Post_Job</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/4c5e57ea62.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="Logo">
+      <a href="/" class="Logo-name">
+        <h2>Naukri-Mitra</h2>
+      </a>
+    </div>
+    <nav class="navigation_links">
+      <ul class="links">
+        <li><a>Remote</a></li>
+        <li><a>Offline</a></li>
+        <li><a>Hybrid</a></li>
+        <li><a>Post a Job</a></li>
+        <li><a href="/login" class="post" style="color: white;">Login/Register</a></li>
+        <i class="fa fa-solid fa-circle-user fa-2x"></i>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div class="main-body">
+
+      <!-- Breadcrumb -->
+      <!-- <nav aria-label="breadcrumb" class="main-breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item"><a href="javascript:void(0)">User</a></li>
+          <li class="breadcrumb-item active" aria-current="page">User Profile</li>
+        </ol>
+      </nav> -->
+      <!-- /Breadcrumb -->
+
+      <div class="row gutters-sm">
+        <div class="col-md-4 mb-3">
+          <div class="card">
+            <div class="card-body">
+              <div class="d-flex flex-column align-items-center text-center">
+                <img src="https://i.ibb.co/7JNPf2C/logo-social.png" border="10px" style="cursor: pointer;" alt="Admin"
+                  class="rounded-circle" width="150">
+                <div class="mt-3">
+                  <h4>Company/StartUp Name</h4>
+                  <!-- <p class="text-secondary mb-1">Full Stack Developer</p> -->
+                  <p class="text-muted font-size-sm">Location/Address</p>
+                  <!-- <button class="btn btn-primary">Follow</button>
+                  <button class="btn btn-outline-primary">Message</button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-3">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-globe mr-2 icon-inline">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="2" y1="12" x2="22" y2="12"></line>
+                    <path
+                      d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+                    </path>
+                  </svg>Website</h6>
+                <span class="text-secondary">website_link</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#0076B3"
+                    class="bi bi-linkedin" style="margin-right: 10px;" viewBox="0 0 16 16">
+                    <path
+                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                  </svg>Linkedin</h6>
+                <span class="text-secondary">@linkedin_link</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-twitter mr-2 icon-inline text-info">
+                    <path
+                      d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                    </path>
+                  </svg>Twitter</h6>
+                <span class="text-secondary">@twitter_link</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-instagram mr-2 icon-inline text-danger">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                  </svg>Instagram</h6>
+                <span class="text-secondary">@instagram_link</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-center flex-wrap">
+                <h6 class="mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="feather feather-facebook mr-2 icon-inline text-primary">
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                  </svg>Facebook</h6>
+                <span class="text-secondary">@facebook_link</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="card mb-3">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Company Name</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  company_name
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Email</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  company_mail
+                </div>
+              </div>
+              <!-- <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Phone</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  (239) 816-9029
+                </div>
+              </div> -->
+              <!-- <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Mobile</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  company_mobileno
+                </div>
+              </div> -->
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Mobile</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  company_mobileno
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Address</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  company_address
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Company-Description</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  company_desc
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Internship/Job-Description</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  intenrnship/job_desc
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Skills-Req.</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  Skills-Req.
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Internship/Job</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  <div class="Int-Job">
+                    <input type="checkbox" name="Int/job" value="Internship" style="margin:0 10px 0 -245px;"
+                      required /><label for="Int/job" style="margin:0 20px 0 0">Internship</label><br>
+                    <h6 style="margin:0 10px 0 0; font-weight: normal;">Duration</h6>
+                    <input type="number" min="1" max="12" placeholder="Months" name="Months" required />
+                  </div>
+                  <input type="checkbox" name="Int/job" value="Job" required /><label for="Int/job"
+                    style="margin-left:10px">Job</label><br>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Mode</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  <input type="radio" name="Mode" value="Online" required /><label for="Mode"
+                    style="margin-left:10px">Online</label><br>
+                  <input type="radio" name="Mode" value="Offline" required /><label for="Mode"
+                    style="margin-left:10px">Offline</label><br>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Minmum-Qualification</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  <select name="qualification" id="qualification">
+
+                    <option value="10">10th Pass</option>
+                    <option value="12">12th Pass</option>
+                    <option value="16">Bachelor's</option>
+                    <option value="18">Masters</option>
+                  </select>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-3">
+                  <h6 class="mb-0">Experience</h6>
+                </div>
+                <div class="col-sm-9 text-secondary">
+                  <input type="number" min="1" max="120" placeholder="Months" name="Months" required />
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <div class="col-sm-12">
+                  <a class="btn btn-info " target="__blank" href="">Edit</a>
+                  <a class="btn btn-danger" href="">Submit</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="row gutters-sm">
+            <div class="col-sm-6 mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6 class="d-flex align-items-center mb-3"><i
+                      class="material-icons text-info mr-2">assignment</i>Project Status</h6>
+                  <small>Web Design</small>
+                  <div class="progress mb-3" style="height: 5px">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <small>Website Markup</small>
+                  <div class="progress mb-3" style="height: 5px">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 72%" aria-valuenow="72"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <small>One Page</small>
+                  <div class="progress mb-3" style="height: 5px">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 89%" aria-valuenow="89"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <small>Mobile Template</small>
+                  <div class="progress mb-3" style="height: 5px">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <small>Backend API</small>
+                  <div class="progress mb-3" style="height: 5px">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 66%" aria-valuenow="66"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 mb-3">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h6 class="d-flex align-items-center mb-3"><i
+                      class="material-icons text-info mr-2">assignment</i>Project Status</h6>
+                  <small>Web Design</small>
+                  <div class="progress mb-3" style="height: 5px">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 80%" aria-valuenow="80"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <small>Website Markup</small>
+                  <div class="progress mb-3" style="height: 5px">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 72%" aria-valuenow="72"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <small>One Page</small>
+                  <div class="progress mb-3" style="height: 5px">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 89%" aria-valuenow="89"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <small>Mobile Template</small>
+                  <div class="progress mb-3" style="height: 5px">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 55%" aria-valuenow="55"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <small>Backend API</small>
+                  <div class="progress mb-3" style="height: 5px">
+                    <div class="progress-bar bg-primary" role="progressbar" style="width: 66%" aria-valuenow="66"
+                      aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <footer>
+    <div class="Connections">
+      <div class="Connect">
+        <h3>CONNECT WITH US</h3>
+        <div class="Social-media-icons">
+          <a class="icon-instagram" href="https://instagram.com/" target="_blank"><i
+              class="fa fa-instagram fa-2x"></i></a>
+          <a class="icon-facebook" href="https://m.facebook.com/" target="_blank"><i
+              class="fa fa-facebook fa-2x"></i></a>
+          <a class="icon-twitter" href="https://m.twitter.com/" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+        </div>
+      </div>
+      <div class="Connect">
+        <h3>CONTACT US</h3>
+        <div class="Contact">
+          <i class="fas fa-envelope fa-2x"></i>
+          <div class="mail">
+            <a class="mail-text" href="mailto:government@india.org">government@india.org</a>
+          </div>
+        </div>
+        <div class="Contact contact-numbers-positon">
+          <i class="fas fa-phone fa-flip-horizontal fa-2x"></i>
+          <div class="contact-numbers">
+            <h5>+91 1800 1111111</h5>
+            <h5>+91 1801 1111112</h5>
+            <h5>+91 1802 1111113</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="copyright-text">
+      &#169; Copyright 2022. All rights reserved by Government of India
+    </div>
+  </footer>
+
+  <style type="text/css">
+    body {
+      /* margin-top: 100px; */
+      color: #1a202c;
+      text-align: left;
+      background-color: #e2e8f0;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* ************************************************************************* */
+
+    /* NAVBAR */
+
+    header {
+      position: fixed;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 1030;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: rgb(124, 115, 115);
+      font-family: montserratsemibold !important;
+      font-weight: 300 !important;
+      transition: all 0.5s ease-in;
+    }
+
+    .header-color {
+      background: linear-gradient(to bottom, rgba(0, 0, 0, 10) 0%, rgba(255, 255, 255, 0) 100%);
+      background-color: #3a488b;
+      color: white;
+      /* background-color: #3a488b; */
+      /* background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e); */
+    }
+
+    .Logo {
+      margin: 20px 20px 0px 40px;
+      cursor: pointer;
+    }
+
+    .Int-Job {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .Logo-name {
+      color: rgb(124, 115, 115);
+    }
+
+    .Logo-name-color {
+      color: white;
+    }
+
+    .Logo-name:hover {
+      text-decoration: none;
+      color: rgb(247, 87, 1);
+    }
+
+    .navigation_links {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      list-style-type: none;
+      margin: 20px 40px 20px 20px;
+      cursor: pointer;
+    }
+
+    .links>li {
+      margin-right: 20px;
+      font-size: 20px;
+    }
+
+    .links>li:hover {
+      color: rgb(247, 87, 1);
+    }
+
+    .fa-circle-user {
+      margin-left: -10px;
+      transition: all 0.5s ease-in;
+    }
+
+    .fa-circle-user-color {
+      color: rgb(247, 87, 1);
+    }
+
+
+    .main-body {
+      padding: 15px;
+      margin-top: 100px;
+    }
+
+    .card {
+      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .1), 0 1px 2px 0 rgba(0, 0, 0, .06);
+    }
+
+    .card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      word-wrap: break-word;
+      background-color: #fff;
+      background-clip: border-box;
+      border: 0 solid rgba(0, 0, 0, .125);
+      border-radius: .25rem;
+    }
+
+    .card-body {
+      flex: 1 1 auto;
+      min-height: 1px;
+      padding: 1rem;
+    }
+
+    .gutters-sm {
+      margin-right: -8px;
+      margin-left: -8px;
+    }
+
+    .gutters-sm>.col,
+    .gutters-sm>[class*=col-] {
+      padding-right: 8px;
+      padding-left: 8px;
+    }
+
+    .mb-3,
+    .my-3 {
+      margin-bottom: 1rem !important;
+    }
+
+    .bg-gray-300 {
+      background-color: #e2e8f0;
+    }
+
+    .h-100 {
+      height: 100% !important;
+    }
+
+    .shadow-none {
+      box-shadow: none !important;
+    }
+
+    /* ************************************************************************* */
+
+    /* FOOTER */
+
+    footer {
+      flex-direction: column;
+      background-color: #002449;
+      color: white;
+    }
+
+    .Connections {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 140px 10px 140px;
+    }
+
+    .Connect {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .Social-media-icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .icon-instagram,
+    .icon-facebook,
+    .icon-twitter {
+      margin: 10px 20px 0 0;
+      color: white;
+    }
+
+    .fa-instagram:hover {
+      color: #0976b4;
+      background: #d6249f;
+      background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+      background-clip: border-box;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .fa-facebook:hover {
+      color: #3b5998;
+    }
+
+    .fa-twitter:hover {
+      color: #55acee;
+    }
+
+    .fa-envelope {
+      margin: 10px 10px 10px 0;
+    }
+
+    .mail-text {
+      color: white;
+      font-size: 18px;
+    }
+
+    .mail-text:hover {
+      color: rgb(247, 87, 1);
+    }
+
+    .fa-phone {
+      margin: 10px 10px 10px 0;
+    }
+
+    .Contact {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .contact-numbers-positon {
+      margin: 0 70px 0 0;
+    }
+
+    .copyright-text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 15px;
+      margin: 10px 0 0 0;
+      padding: 0 0 10px 0;
+    }
+  </style>
+
+  <script type="text/javascript">
+    var header = document.getElementsByTagName("header")[0];
+    var avatar = document.getElementsByClassName("fa-circle-user")[0];
+    var logo = document.getElementsByClassName("Logo-name")[0];
+    window.addEventListener("scroll", () => {
+      if (window?.scrollY > 100) {
+        if (header == undefined) return
+        else {
+          header.classList.add("header-color");
+          avatar.classList.add("fa-circle-user-color");
+          logo.classList.add("Logo-name-color");
+        }
+      } else {
+        header.classList.remove("header-color");
+        avatar.classList.remove("fa-circle-user-color");
+        logo.classList.remove("Logo-name-color");
+      }
+    })
+  </script>
+</body>
+
+</html>
