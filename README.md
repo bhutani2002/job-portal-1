@@ -35,16 +35,16 @@ The platform is made in a very understandable design and layout with very minima
 #### Home Page(1)
 ![Screenshot (85)](https://user-images.githubusercontent.com/72596619/155871241-aa42c051-498f-48e3-93c2-959e7eff95bb.png)
 
-####Home Page(2)
+#### Home Page(2)
 ![Screenshot (88)](https://user-images.githubusercontent.com/72596619/155871249-1de689f7-d167-4c43-93cf-3402a72a655c.png)
 
-####Post_Job
+#### Post_Job
 ![Screenshot (86)](https://user-images.githubusercontent.com/72596619/155871255-982573f0-3c24-4702-a0aa-d9b582ef90f4.png)
 
-####User_Profile
+#### User_Profile
 ![Screenshot (89)](https://user-images.githubusercontent.com/72596619/155871264-352dce4c-7aa5-4b42-9f16-d3eecd67fdab.png)
 
-####Jobs
+#### Jobs
 ![Screenshot (87)](https://user-images.githubusercontent.com/72596619/155871266-c323c5c2-1753-4e0e-a5b7-5cb9ac64392d.png)
 
 
