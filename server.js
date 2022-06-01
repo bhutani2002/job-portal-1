@@ -84,4 +84,4 @@ app.post('/login', passport.authenticate('local', { failureRedirect: '/' }),  fu
 
 // assign port
 const port = 8080;
-app.listen(process.env.port|| port, () => console.log(`This app is listening on port ${port}`));
+app.listen(process.env.port|| PORT, () => console.log(`This app is listening on port ${port}`));
